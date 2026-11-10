@@ -1,0 +1,14 @@
+[project]
+name = "orion"
+version = "0.1.0"
+description = "Authorized security assessment platform with offline voice"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+voice = ["vosk>=0.3.45", "sounddevice>=0.4.6", "pyttsx3>=2.90"]
+extras = ["psutil>=5.9"]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
